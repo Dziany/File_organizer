@@ -9,14 +9,26 @@ try:
     #Opening config.josn file (our extension dictionary) in read only 
     with open('config.json', 'r') as f:
         #extension_map is our dictionary now
-        extension_map = json.load(f)
-#in case the config.json file is missiong
+        config = json.load(f)
+
+        #Get path and map from config
+        source_path_str = config.get("source_dir")
+        extension_map = config.get("extension_map")
+
+#In case the config.json file is missiong
 except FileNotFoundError:
     print("ERROR: The config.json file was not found, make sure it is included")
     sys.exit(1)
 
-#Directory to be organised (Make sure it is right for your setup!)
-folder_to_organize = pathlib.Path(r"DIRECTORY")
+
+#Setting up dir to be organized
+folder_to_organize = pathlib.Path(source_path_str)
+
+#If the path is invalid or not found
+if not folder_to_organize.exists():
+    print(f"Error: Path {source_path_str} does not exist! Check config.json")
+    sys.exit(1)
+
 
 #Main Loop for organizing files in Downloads
 for item in folder_to_organize.iterdir():

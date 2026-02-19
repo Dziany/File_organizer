@@ -43,6 +43,6 @@ Example structure:
 - **[] Duplicate Handling** - Automatically rename files if a version already exists in the destination
 - **[] Watching Integration** - Real-time monitoring to organize files as soon as they are downloaded
 
-### Author: Dziany
+### Author: Piotr Żurawski
 
 

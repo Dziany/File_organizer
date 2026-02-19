@@ -1,4 +1,6 @@
-    {
+{
+    "source dir": "YOUR_DIRECTORY",
+    "extension_map": {
         "Image": [".jpg", ".png", ".gif", ".jpeg", ".bmp"],
         "Documents": [".pdf", ".txt", ".docx", ".xlsx", ".rtf"],
         "Archives": [".zip", ".rar", ".7z"],
@@ -7,3 +9,4 @@
         "Video": [".mp4", ".mkv", ".mov"],
         "Dev": [".py", ".js", ".json", ".html"]
     }
+}
