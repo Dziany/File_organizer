@@ -1,3 +1,4 @@
+
 import pathlib
 import shutil
 import json
@@ -15,7 +16,7 @@ except FileNotFoundError:
     sys.exit(1)
 
 #Directory to be organised (Make sure it is right for your setup!)
-folder_to_organize = pathlib.Path(r"C:\Users\Piotrek\Documents\Smart_File_Organizer")
+folder_to_organize = pathlib.Path(r"DIRECTORY")
 
 #Main Loop for organizing files in Downloads
 for item in folder_to_organize.iterdir():
@@ -82,4 +83,3 @@ for item in folder_to_organize.iterdir():
             print(f"Warning!: File {item.name} is already in directory {category}")
         except Exception as e:
             print(f"Unexpected error with file {item.name}: {e}")
-    
