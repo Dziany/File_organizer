@@ -39,7 +39,7 @@ To install needed libraries run:
 4. **Run the script**
    ```bash
    python main.py
-
+   ```
 
 ## ⚙️ Configuration
 You can easily add or remove file types by editing config.json under extension_map
@@ -56,6 +56,7 @@ Example structure:
 - **[] GUI Version**: Build a user-friendly interface using Tkinter or PyQt
 - **[] Duplicate Handling** - Automatically rename files if a version already exists in the destination
 - **[] Watching Integration** - Real-time monitoring to organize files as soon as they are downloaded
+- **[] Choices of handling files** - User will be able to chose if a file is going to be moved, copied or copied/moved and renamed
 - **[] AI-assisnant** - Assistant to help with managing your files, based on your answeres it will be able to adjust config.json to your preferences
 
 ### Author: Piotr Żurawski
