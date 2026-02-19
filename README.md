@@ -12,6 +12,17 @@ A lightweight and efficient Python utility that automatically organizes cluttere
 
 ### Prerequisites
 - Python 3.6 or higher.
+- Windows 10 or Windows 11.
+- Installed libraries:
+   - pathlib
+   - shutil
+
+## Instaling Libraries
+To install needed libraries run:
+   ```bash 
+   pip install pathlib
+   pip install shutil
+   ```
 
 ### Installation & Usage
 1. **Clone the repository:**
@@ -21,27 +32,31 @@ A lightweight and efficient Python utility that automatically organizes cluttere
    ```bash
    cd python-file-organizer
 3. **Configure your path:**
-   Open main.py and update the folder_to_organize variable with your target directory path:
-   ```python
-      folder_to_organize = pathlib.Path("C:\Users\User\Downloads")
+   Open config.json and update the source_dir variable with your target directory path:
+   ```json
+      "source dir": "YOUR_DIRECTORY"
+   ```
 4. **Run the script**
    ```bash
    python main.py
 
+
 ## ⚙️ Configuration
-You can easily add or remove file types by editing config.json
+You can easily add or remove file types by editing config.json under extension_map
 
 Example structure:
 ```Json
-{
-    "Images": [".jpg", ".png", ".gif"],
-    "Dev": [".py", ".js", ".html", ".json"]
-}
+"extension_map": {
+        "Image": [".jpg", ".png", ".gif", ".jpeg", ".bmp"],
+        "Documents": [".pdf", ".txt", ".docx", ".xlsx", ".rtf"],
+    }
+
 ```
 ## 📈 Roadmap (Future Improvements)
 - **[] GUI Version**: Build a user-friendly interface using Tkinter or PyQt
 - **[] Duplicate Handling** - Automatically rename files if a version already exists in the destination
 - **[] Watching Integration** - Real-time monitoring to organize files as soon as they are downloaded
+- **[] AI-assisnant** - Assistant to help with managing your files, based on your answeres it will be able to adjust config.json to your preferences
 
 ### Author: Piotr Żurawski
 
