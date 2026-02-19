@@ -16,4 +16,4 @@ A lightweight and efficient Python utility that automatically organizes cluttere
 ### Installation & Usage
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR-USERNAME/python-file-organizer.git](https://github.com/YOUR-USERNAME/python-file-organizer.git)
+   git clone [https://github.com/Dziany/File_organizer.git)
